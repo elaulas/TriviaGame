@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container bigBox">
+        <h1 class="title">MOVIE TRIVIA</h1>
+        <p class="subTitle">Pick the movie that the quote appears in.</p>
+        <div class="start"></div>
+        <div id="timer"></div>
+        <div class="answerRight"></div>
+        <div class="answerWrong"></div>
+        <ul>
+            <h1 class="questionOne questions">"My mama always said, 'Life was like a box of chocolates'"</h1>
+            <li data-movie="Forrest Gump" class="questionOne questions">Forrest Gump</li>
+            <li data-movie="Mission Impossible" class="questionOne questions">Mission Impossible</li>
+            <li data-movie="Ironman" class="questionOne questions">Ironman</li>
+            <li data-movie="The Godfather" class="questionOne questions">The Godfather</li>
+        </ul>
+        <ul>
+                <h1 class="questionTwo questions">"No, I am your father."</h1>
+                <li data-movie="Indiana Jones" class="questionTwo questions">Indiana Jones</li>
+                <li data-movie="Outbreak" class="questionTwo questions">Outbreak</li>
+                <li data-movie="Black Panther" class="questionTwo questions">Black Panther</li>
+                <li data-movie="Star Wars" class="questionTwo questions">Star Wars</li>
+            </ul>
+            <ul>
+                    <h1 class="questionThree questions">"Brothers don't shake hands. Brothers gotta hug"</h1>
+                    <li data-movie="Avengers" class="questionThree question">Avengers</li>
+                    <li data-movie="Tomb Raider" class="questionThree questions">Tomb Raider</li>
+                    <li data-movie="Jumanji" class="questionThree questions">Jumanji</li>
+                    <li data-movie="Tommy Boy" class="questionThree questions">Tommy Boy</li>
+                </ul>
+                <ul>
+                    <h1 class="questionFour questions">"Houston, we have a problem.?"</h1>
+                    <li data-movie="Insidious" class="questionFour questions">Insidious</li>
+                    <li data-movie="Apollo 13" class="questionFour questions">Apollo 13</li>
+                    <li data-movie="Back to the Future" class="questionFour questions">Back to the Future</li>
+                    <li data-movie="Superman" class="questionFour questions">Superman</li>
+                </ul>
+                <ul>
+                    <h1 class="questionFive questions">"I'm going to make him an offer he can't refuse."</h1>
+                    <li data-movie="The Godfather" class="questionFive questions">The Godfather</li>
+                    <li data-movie="Thor" class="questionFive questions">Thor</li>
+                    <li data-movie="Saving Private Ryan" class="questionFive questions">Saving Private Ryan</li>
+                    <li data-movie="Sound of Music" class="questionFive questions">Sound of Music</li>
+                </ul>
+                <ul>
+                    <h1 class="questionSix questions">"You can't handle the truth!"</h1>
+                    <li data-movie="Waynes World" class="questionSix questions">Waynes World</li>
+                    <li data-movie="The Notebook" class="questionSix questions">The Notebook</li>
+                    <li data-movie="Purple Rain" class="questionSix questions">Purple Rain</li>
+                    <li data-movie="A Few Good Men" class="questionSix questions">A Few Good Men</li>
+                </ul>
+                <ul>
+                    <h1 class="questionSeven questions">"Toto, I've got a feeling we're not in Kansas anymore"</h1>
+                    <li data-movie="Grease" class="questionSeven questions">Grease</li>
+                    <li data-movie="Casablanca" class="questionSeven questions">Casablanca</li>
+                    <li data-movie="Braveheart" class="questionSeven questions">Braveheart</li>
+                    <li data-movie="Wizard of Oz" class="questionSeven questions">Wizard of Oz</li>
+                </ul>
+                <ul>
+                    <h1 class="questionEight questions">"Say hello to my little friend!"</h1>
+                    <li data-movie="The Karate Kid" class="questionEight questions">The Karate Kid</li>
+                    <li data-movie="La Bamba" class="questionEight questions">Labamba</li>
+                    <li data-movie="Scarface" class="questionEight questions">Scarface</li>
+                    <li data-movie="Rocky" class="questionEight questions">Rocky</li>
+                </ul>
+                <ul>
+                    <h1 class="questionNine questions">"My name is inigo montoya. You killed my father. Prepare to die."</h1>
+                    <li data-movie="Seven" class="questionNine questions">Seven</li>
+                    <li data-movie="Chinatown" class="questionNine questions">Chinatown</li>
+                    <li data-movie="The Princess Bride" class="questionNine questions">The Princess Bride</li>
+                    <li data-movie="Casino" class="questionNine questions">Casino</li>
+                </ul>
+                <ul>
+                    <h1 class="questionTen questions">"You'll shoot your eye out"</h1>
+                    <li data-movie="Full Metal Jacket" class="questionTen questions">Full Metal Jacket</li>
+                    <li data-movie="Taxi Driver" class="questionTen questions">Taxi Driver</li>
+                    <li data-movie="Dirty Dancing" class="questionTen questions">Dirty Dancing</li>
+                    <li data-movie="A Christmas Story" class="questionTen questions">A Christmas Story</li>
+                </ul>
+                <div class="results">
+                    <h2 class="correctAnswers"></h2>
+                    <h2 class="incorrectAnswers"></h2>
+                    <h2 class="unanswered"></h2>
+                    <button class="startOver">Play Again?</button>
+                </div>
+
+
+    <script src="assets/javascript/app.js"></script>
+    </div>
+</body>
+
+</html>

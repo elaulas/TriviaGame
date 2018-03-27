@@ -1,0 +1,72 @@
+body {
+    background-image: url(" ../images/movies.jpg");
+}
+.bigBox {
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 350px;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    font-size: 50pt;
+    color: navy;
+}
+
+.subTitle {
+    text-align: center;
+    font-size: 18pt;
+    font-family: cursive;
+}
+ul {
+    list-style-type: none;
+    font-size: 30pt;
+    color: blue;
+  }
+
+li {
+    border:2px solid navy;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: red;
+}
+
+li:hover {
+    background-color: navy;
+    color: white;
+}
+
+#timer {
+    text-align: center;
+}
+
+.start {
+    background-color: blue;
+    width: 30%;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 200px 35% 0 35%;
+    position: relative;
+}
+.start:hover {
+    background-color: red;
+}
+
+.questions {
+    text-align: center;
+}
+.answerWrong, .answerRight {
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+    font-size: 35pt;
+    font-weight: bolder;
+}
+img {
+    width: 400px;
+}
