@@ -27,6 +27,7 @@ $(document).ready(function reset() {
     $(".answerRight").hide();
     $(".answerWrong").hide();
     $(".startOver").hide();
+    $('.timesUp').hide();
   }
 
   function start() {
@@ -40,6 +41,9 @@ $(document).ready(function reset() {
   }
 
   function questionOne() {
+    wins = 0;
+    losses = 0;
+    notAnswered = 0;
     $('.subTitle').show();
     hidden();
     $("#timer").show();
@@ -319,6 +323,7 @@ $(document).ready(function reset() {
     if (number === 0){
       notAnswered++;
       hidden();
+      $('.timesUp').show();
       incorrect();
 
     }
