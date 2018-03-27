@@ -70,3 +70,18 @@ li:hover {
 img {
     width: 400px;
 }
+.results {
+    text-align: center;
+    margin-top: 200px;
+    color: navy;
+}
+button {
+    padding: 25px;
+    font-size: 18pt;
+    margin-top: 50px;
+    color: navy;
+}
+button:hover {
+    background-color: navy;
+    color: white;
+}
